@@ -1,0 +1,77 @@
+
+
+.social-link.black {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-style: hidden;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item.black:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item.black {
+  margin-left: 0px;
+}
+
+.social-item.black:last-child {
+  margin-right: 0px;
+}
+
+.social-link.black:hover,
+.social-link.black:focus {
+  /* color: #ffffff; */
+  background-color: $accent-text-color;
+  border: none;
+  border-style: hidden;
+  border-radius: 50%;
+}
+
+/* --------------------------------------                         ГЕОМЕТРИЯ */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-flexbox {
+  display: flex;
+}
+
+.footer-box + .footer-box {
+  margin-left: 70px;
+}
+
+.social-connect + .social-list {
+  margin-left: 0px;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+  /* background-color: darkgoldenrod; */
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: darkgreen; */
+}
+
+.address-text {
+  margin: 0px;
+}
+.address-email,
+.address-tel {
+  padding-top: 9px;
+}

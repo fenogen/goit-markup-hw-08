@@ -1,0 +1,41 @@
+  
+  .client-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-left: -15px;
+  }
+
+
+.client-item {
+  margin-right: 15px;
+  margin-left: 15px;
+  flex-basis: calc(100% / 4 - 0px);
+}
+
+.client-link {
+  color: #afb1b8; /*1-variant (удалить при 2-м варианте)*/
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: greenyellow; */
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: $accent-text-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover,              /*1-variant (удалить при 2-м варианте)*/
+.client-link:focus {
+  color: $accent-text-color;
+  border-color: $accent-text-color;
+}
+
+.client-icon {
+  fill: currentColor;
+}
