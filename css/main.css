@@ -20,7 +20,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -28,9 +27,40 @@ img {
   /* outline: 1px solid blue; */
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    background-color: pink;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: skyblue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    background-color: yellowgreen;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .section {
+    /*автоматом и tablet*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .product {
@@ -115,6 +145,28 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px;
+}
+
+@media screen and (min-width: 320px) {
+  .service-title,
+  .product-name {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service-title,
+  .product-name {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service-title,
+  .product-name {
+    /*+ tablet*/
+    text-align: left;
+  }
 }
 
 .service-text {
@@ -399,9 +451,7 @@ p {
 
 .backdrop.is-hidden {
   opacity: 0;
-  /*скрыли*/
   pointer-events: none;
-  /*пробивает слой*/
 }
 
 .backdrop.is-hidden .modal {
@@ -415,7 +465,6 @@ p {
   top: 141px;
   left: 50%;
   right: 50%;
-  /* bottom: auto; */
   transform: translate(-50%) scale(1);
   transition-property: transform;
   transition-duration: 250ms;
@@ -427,17 +476,10 @@ p {
 
 /* -----------------------------------                            ГЕОМЕТРИЯ */
 .banner .container {
-  /*padding-top: 200px;*/
-  /*padding-bottom: 200px;*/
-  /* background-color: red; */
   text-align: center;
-  /*background-image: url(../img/banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;*/
 }
 
 .banner-name {
-  /* background-color: blue; */
   margin: 0px;
 }
 
@@ -453,18 +495,45 @@ p {
 
 /* -----------------------------------                            ГЕОМЕТРИЯ */
 .service-flex {
-  display: flex;
-  /* background-color: lawngreen; */
   padding: 0px;
   margin: 0px;
   margin-left: -30px;
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
+}
+
+@media screen and (min-width: 768px) {
+  .service-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service-flex {
+    display: flex;
+  }
 }
 
 .service-item {
   margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .service-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service-item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .service-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .service-item::before {

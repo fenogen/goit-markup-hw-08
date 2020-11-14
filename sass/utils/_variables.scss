@@ -1,4 +1,24 @@
-  $main-text-color: #212121;
-  $secondary-text-color: #757575;
-  $accent-text-color: #2196f3;
-  $color-white: #ffffff;
+$main-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-text-color: #2196f3;
+$color-white: #ffffff;
+
+// $mobile: @media screen and (min-width: 320px);
+
+@mixin mobile {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

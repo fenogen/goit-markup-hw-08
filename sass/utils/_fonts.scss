@@ -1,173 +1,184 @@
 /*--------------------------------BODY------------------------*/
 body {
-    color: $main-text-color;
-    font-family: Roboto, sans-serif;
+  color: $main-text-color;
+  font-family: Roboto, sans-serif;
 }
 
-
 p {
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 }
 
 /*--------------------------------BANNER------------------------*/
 
 .banner-name {
-    color: #ffffff;
+  color: #ffffff;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .banner-button {
-    color: #ffffff;
-    background-color: $accent-text-color;
+  color: #ffffff;
+  background-color: $accent-text-color;
 
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /*--------------------------------------SERVICE---------------------------*/
 .service-title,
 .product-name {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    margin: 0px;
+  margin: 0px;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet {
+    text-align: left;
+  }
+
+  @include desktop {
+    /*+ tablet*/
+    text-align: left;
+  }
 }
 
 .service-text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    margin: 0px;
-    margin-top: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  margin-top: 10px;
 }
 
 .product-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*------------------------------------TEAM----------------------*/
 
 .team-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    margin-top: 0px;
-    margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .team-name,
 .team-text {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    margin: 0px;
+  margin: 0px;
 }
 
 .team-name {
-    margin-top: 30px;
-    margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-text {
-    font-weight: normal;
+  font-weight: normal;
 }
 
-/*------------------------------------CLIENT------------------------*/ 
+/*------------------------------------CLIENT------------------------*/
 
 .client-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    margin-top: 0px;
-    margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 /*-----------------------------------FOOTER------------------------*/
 
 .address {
-    font-style: inherit;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+  font-style: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 .address-text {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .address-email,
 .address-tel {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-logo {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .social-connect {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 
-    margin: 0px;
-    margin-top: 12px;
-    /* background-color: rebeccapurple; */
+  margin: 0px;
+  margin-top: 12px;
+  /* background-color: rebeccapurple; */
 }
 
-/*----------------------------------------PROJECT-------------------------------*/ 
-
+/*----------------------------------------PROJECT-------------------------------*/
 
 .project-name {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .project-desc {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .project-name,
 .project-desc {
-    margin: 0px;
-    margin-left: 24px;
+  margin: 0px;
+  margin-left: 24px;
 }

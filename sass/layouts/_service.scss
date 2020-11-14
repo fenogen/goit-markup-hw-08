@@ -1,18 +1,39 @@
-
 /* -----------------------------------                            ГЕОМЕТРИЯ */
 
 .service-flex {
-  display: flex;
-  /* background-color: lawngreen; */
+  // display: flex;
+
   padding: 0px;
   margin: 0px;
   margin-left: -30px;
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+  }
 }
+
 .service-item {
   margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+
+  @include tablet {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.service-item:not(:last-child) {
+  @include mobile {
+    margin-bottom: 30px;
+  }
 }
 
 .service-item::before {
