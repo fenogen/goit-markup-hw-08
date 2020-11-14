@@ -3,3 +3,15 @@
 $mobile: 480px;
 $tablet: 768px;
 $descktop: 1200px;
+
+.team-photo:nth-child(-n + 4) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+  @include tablet {
+    margin-bottom: 0px;
+  }
+
+  @include desktop {
+    margin-bottom: 0px;
+  }
+}

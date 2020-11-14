@@ -601,31 +601,80 @@ p {
   width: 100%;
 }
 
-/* --------------------------------------                         ГЕОМЕТРИЯ */
-.team .container {
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
-}
-
 .team-flex {
-  display: flex;
-  /* background-color: magenta; */
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: -30px;
-  /*Для функции - CALC*/
+}
+
+@media screen and (min-width: 320px) {
+  .team-flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-flex {
+    display: flex;
+    margin-left: -30px;
+    /*Для функции - CALC*/
+  }
 }
 
 .team-photo {
-  margin-left: 30px;
-  /*Для функции - CALC*/
-  flex-basis: calc(100% / 4 - 30px);
-  /*Для функции - CALC*/
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .team-photo {
+    display: inline-block;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-photo {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-photo {
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .team-photo:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-photo:nth-child(-n + 2) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+}
+
+@media screen and (min-width: 768px) {
+  .team-photo:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
 
 .social-list {
