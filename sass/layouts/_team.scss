@@ -50,10 +50,18 @@
   }
 }
 
-.team-photo:nth-child(-n + 2) {
+.team-photo:nth-child(n + 3) {
   /*Перебили выше специфичность у телефона 30 рх
   что бы правильно отображалась последняя карточка*/
   @include tablet {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.team-photo:nth-child(n + 1) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+  @include desktop {
+    margin-bottom: 0px;
   }
 }

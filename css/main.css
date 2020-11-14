@@ -666,14 +666,25 @@ p {
   }
 }
 
-.team-photo:nth-child(-n + 2) {
+.team-photo:nth-child(n + 3) {
   /*Перебили выше специфичность у телефона 30 рх
   что бы правильно отображалась последняя карточка*/
 }
 
 @media screen and (min-width: 768px) {
-  .team-photo:nth-child(-n + 2) {
-    margin-bottom: 30px;
+  .team-photo:nth-child(n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+.team-photo:nth-child(n + 1) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+}
+
+@media screen and (min-width: 1200px) {
+  .team-photo:nth-child(n + 1) {
+    margin-bottom: 0px;
   }
 }
 
