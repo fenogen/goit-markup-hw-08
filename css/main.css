@@ -734,24 +734,80 @@ p {
 }
 
 .client-list {
-  display: flex;
   margin: 0px;
   padding: 0px;
-  margin-left: -15px;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 320px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .client-item {
-  margin-right: 15px;
-  margin-left: 15px;
-  flex-basis: calc(100% / 4 - 0px);
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .client-item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item {
+    flex-basis: calc(100% / 4 - 0px);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .client-item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+.client-item:nth-child(n + 4) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+}
+
+@media screen and (min-width: 768px) {
+  .client-item:nth-child(n + 4) {
+    margin-bottom: 0px;
+  }
+}
+
+.client-item:nth-child(n + 1) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item:nth-child(n + 1) {
+    margin-bottom: 0px;
+  }
 }
 
 .client-link {
   color: #afb1b8;
-  /*1-variant (удалить при 2-м варианте)*/
   display: flex;
-  width: 170px;
-  height: 90px;
   justify-content: center;
   align-items: center;
   /* background-color: greenyellow; */
@@ -761,6 +817,27 @@ p {
   transition-property: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) {
+  .client-link {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-link {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-link {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 .client-link:hover,
