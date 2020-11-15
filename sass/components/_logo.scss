@@ -1,7 +1,22 @@
 .header-logo,
 .footer-logo {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 31px;
   letter-spacing: 0.03em;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @include desktop {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+.icon-link {
+  color: $accent-text-color;
+}
+
+.header-logo {
+  color: #212121;
 }

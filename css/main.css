@@ -114,6 +114,28 @@ p {
   color: #757575;
 }
 
+/*-------------------------------HEADER--------------------------*/
+.list.navigator {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .list.navigator.header-cont {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list.navigator.header-cont {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 /*--------------------------------BANNER------------------------*/
 .banner-name {
   color: #ffffff;
@@ -377,55 +399,9 @@ p {
   }
 }
 
-.icon-link {
-  color: #2196f3;
-}
-
-.header-logo {
-  color: #212121;
-}
-
 /*.decor {
   border-bottom: 1px solid #ececec;
 }*/
-.link-nav {
-  color: inherit;
-}
-
-.link-email,
-.link-tel {
-  color: #757575;
-  /* background-color: yellowgreen; */
-}
-
-.link-nav,
-.link-email,
-.link-tel {
-  transition-property: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-nav:hover,
-.link-nav:focus,
-.link-email:hover,
-.link-email:focus,
-.link-tel:hover,
-.link-tel:focus {
-  color: #2196f3;
-}
-
-.icon-email:hover,
-.icon-email:focus,
-.icon-tel:hover,
-.icon-tel:focus {
-  fill: #2196f3;
-}
-
-.link-nav.current {
-  color: #2196f3;
-}
-
 .header-nav .item {
   position: relative;
 }
@@ -441,13 +417,6 @@ p {
   left: 0px;
   transform: translateY(32px);
   background-color: #2196f3;
-}
-
-.list.navigator {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 
 .link-email,
@@ -491,7 +460,18 @@ p {
   margin: 0px;
   display: flex;
   align-items: center;
-  margin-left: 93px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-left: 93px;
+  }
 }
 
 .header-nav .item:not(:first-child) {
@@ -519,8 +499,66 @@ p {
   }
 }
 
-.header-cont .item:first-child {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header-cont .item:first-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-cont .item:first-child {
+    margin-right: 50px;
+  }
+}
+
+.link-nav {
+  color: inherit;
+}
+
+.link-email,
+.link-tel {
+  color: #757575;
+  /* background-color: yellowgreen; */
+}
+
+@media screen and (min-width: 768px) {
+  .link-email {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-email {
+    margin-bottom: 0px;
+  }
+}
+
+.link-nav,
+.link-email,
+.link-tel {
+  transition-property: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-nav:hover,
+.link-nav:focus,
+.link-email:hover,
+.link-email:focus,
+.link-tel:hover,
+.link-tel:focus {
+  color: #2196f3;
+}
+
+.icon-email:hover,
+.icon-email:focus,
+.icon-tel:hover,
+.icon-tel:focus {
+  fill: #2196f3;
+}
+
+.link-nav.current {
+  color: #2196f3;
 }
 
 .banner {
@@ -1245,8 +1283,30 @@ p {
 .header-logo,
 .footer-logo {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 31px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 320px) {
+  .header-logo,
+  .footer-logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo,
+  .footer-logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+.icon-link {
+  color: #2196f3;
+}
+
+.header-logo {
+  color: #212121;
 }
 /*# sourceMappingURL=main.css.map */

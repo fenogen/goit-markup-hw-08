@@ -8,6 +8,25 @@ p {
   color: $secondary-text-color;
 }
 
+/*-------------------------------HEADER--------------------------*/
+.list.navigator {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.list.navigator.header-cont {
+  @include tablet {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 /*--------------------------------BANNER------------------------*/
 
 .banner-name {
