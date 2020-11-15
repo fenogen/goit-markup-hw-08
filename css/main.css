@@ -125,6 +125,20 @@ p {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 320px) {
+  .banner-name {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-name {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
 .banner-button {
   color: #ffffff;
   background-color: #2196f3;
@@ -339,9 +353,28 @@ p {
 }
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 320px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .icon-link {
@@ -469,12 +502,21 @@ p {
   /* background-color: yellow; */
   padding-left: 0px;
   margin: 0px;
-  display: flex;
   align-items: center;
   margin-right: 0;
-  /*!!!!!!!!!!!!!!!!!!!!!*/
-  /* justify-content: flex-end; */
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header-cont {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-cont {
+    display: flex;
+  }
 }
 
 .header-cont .item:first-child {
@@ -485,8 +527,21 @@ p {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+
+@media screen and (min-width: 320px) {
+  .banner {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .backdrop {

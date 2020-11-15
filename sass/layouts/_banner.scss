@@ -3,8 +3,16 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @include mobile {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: cover;
+  }
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .backdrop {

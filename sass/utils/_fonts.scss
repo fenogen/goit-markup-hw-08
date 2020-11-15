@@ -19,6 +19,16 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  @include desktop {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .banner-button {
