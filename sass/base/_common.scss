@@ -27,15 +27,15 @@ img {
 
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-color: pink;
+    // background-color: pink;
   }
   @include tablet {
     width: 768px;
-    background-color: skyblue;
+    // background-color: skyblue;
   }
   @include desktop {
     width: 1200px;
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
   }
 }
 

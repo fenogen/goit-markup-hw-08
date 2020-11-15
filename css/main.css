@@ -30,21 +30,18 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: pink;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: skyblue;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: yellowgreen;
   }
 }
 
@@ -666,6 +663,7 @@ p {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 0px;
   }
 }
 
@@ -695,6 +693,7 @@ p {
   .team-photo {
     display: inline-block;
     padding-bottom: 24px;
+    flex-basis: 100%;
   }
 }
 
@@ -739,6 +738,27 @@ p {
 @media screen and (min-width: 1200px) {
   .team-photo:nth-child(n + 1) {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .team-picture {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-picture {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-picture {
+    width: 270px;
+    height: 260px;
   }
 }
 

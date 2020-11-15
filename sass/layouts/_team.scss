@@ -7,6 +7,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 0px;
   }
 
   @include tablet {
@@ -29,6 +30,8 @@
   @include mobile {
     display: inline-block;
     padding-bottom: 24px;
+    // margin-left: 0px;
+    flex-basis: 100%;
   }
 
   @include tablet {
@@ -63,5 +66,24 @@
   что бы правильно отображалась последняя карточка*/
   @include desktop {
     margin-bottom: 0px;
+  }
+}
+
+.team-picture {
+  // margin-left: auto;
+  // margin-right: auto;
+  @include mobile {
+    width: 450px;
+    height: 460px;
+  }
+
+  @include tablet {
+    width: 354px;
+    height: 374px;
+  }
+
+  @include desktop {
+    width: 270px;
+    height: 260px;
   }
 }
