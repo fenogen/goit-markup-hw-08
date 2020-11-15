@@ -284,6 +284,60 @@ p {
   margin-left: 24px;
 }
 
+/*----------------------------------------Button-list---------------------------*/
+.item-button {
+  color: #212121;
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-width: 0px;
+  border-color: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-button:hover,
+.item-button:focus {
+  color: #e5e5e5;
+  background-color: #2196f3;
+}
+
+/*----------------------------------------PROJECT--------------------------------*/
+.project-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-article {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px 63px 24px;
+  margin: 0px;
+  position: absolute;
+  opacity: 0;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-photo:hover .project-article {
+  opacity: 1;
+  transform: translateY(-294px);
+}
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -925,100 +979,126 @@ p {
   padding-top: 9px;
 }
 
-.item-button {
-  color: #212121;
-  background-color: #f5f4fa;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 6px 22px;
-  border-radius: 4px;
-  border-width: 0px;
-  border-color: transparent;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-button:hover,
-.item-button:focus {
-  color: #e5e5e5;
-  background-color: #2196f3;
-}
-
 .button-flex {
   display: flex;
-  /* height: 182px; */
-  /* background-color: blueviolet; */
   margin: 0px;
   padding: 0px;
-  margin-bottom: 50px;
-  justify-content: center;
 }
 
-.button-flex .item:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 320px) {
+  .button-flex {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
 }
 
-.project-photo {
-  position: relative;
-  overflow: hidden;
+@media screen and (min-width: 768px) {
+  .button-flex {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
-.project-article {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px 63px 24px;
-  margin: 0px;
-  position: absolute;
-  opacity: 0;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .button-flex {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
-.project-photo:hover .project-article {
-  opacity: 1;
-  transform: translateY(-294px);
+@media screen and (min-width: 320px) {
+  .button-flex .item:nth-child(-n + 3) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .button-flex .item:nth-child(4) {
+    margin-right: 8px;
+  }
+}
+
+.button-flex .item:nth-child(n + 1) {
+  /*Перебили выше специфичность у телефона 15 рх + desktop*/
+}
+
+@media screen and (min-width: 768px) {
+  .button-flex .item:nth-child(n + 1) {
+    margin-bottom: 0px;
+  }
 }
 
 .project-flex {
-  display: flex;
   /* background-color: red; */
   margin: 0px;
   padding: 0px;
-  flex-wrap: wrap;
   margin-left: -30px;
-  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .project-flex .item {
   margin-left: 30px;
   /*Для калькуляции*/
-  margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-  /*Для калькуляции*/
-  height: 404px;
   border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .project-flex .item {
+    flex-basis: calc(100% / 2 - 30px);
+    /*Для калькуляции*/
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-flex .item {
+    flex-basis: calc(100% / 3 - 30px);
+    /*Для калькуляции*/
+  }
 }
 
 .project-flex .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-flex .item:nth-child(n + 7) {
-  margin-bottom: 0px;
+@media screen and (min-width: 320px) {
+  .project-flex .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-flex .item:nth-child(n + 7) {
+    margin-bottom: 0px;
+  }
 }
 
 .header-logo,
