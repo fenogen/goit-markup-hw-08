@@ -30,18 +30,21 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    background-color: pink;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    background-color: skyblue;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    background-color: yellowgreen;
   }
 }
 
@@ -924,6 +927,18 @@ p {
   fill: currentColor;
 }
 
+/*.social-list.black {
+  @include mobile {
+    justify-content: center;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+    justify-content: center;
+  }
+}*/
 .social-link.black {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -962,12 +977,63 @@ p {
   padding-bottom: 60px;
 }
 
-.footer-flexbox {
-  display: flex;
+@media screen and (min-width: 320px) {
+  .footer-flexbox {
+    display: block;
+  }
 }
 
-.footer-box + .footer-box {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .footer-flexbox {
+    display: flex;
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flexbox {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer-box {
+    /* + tablet*/
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer-box + .footer-box {
+    margin-left: 0px;
+    margin-top: 60px;
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-box + .footer-box {
+    margin-left: 165px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box + .footer-box {
+    margin-left: 70px;
+  }
 }
 
 .social-connect + .social-list {
