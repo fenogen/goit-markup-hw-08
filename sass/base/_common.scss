@@ -28,10 +28,12 @@ img {
   @media screen and (min-width: 480px) {
     width: 480px;
     background-color: pink;
+
   }
   @include tablet {
     width: 768px;
     background-color: skyblue;
+
   }
   @include desktop {
     width: 1200px;
@@ -54,6 +56,9 @@ img {
 .product {
   padding-top: 0px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .list {

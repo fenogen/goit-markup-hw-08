@@ -68,6 +68,12 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .product {
+    display: none;
+  }
+}
+
 .list {
   list-style: none;
 }
@@ -419,26 +425,6 @@ p {
   background-color: #2196f3;
 }
 
-.link-email,
-.link-tel {
-  display: inline-flex;
-  justify-content: center;
-}
-
-.link-email .icon-email,
-.link-tel .icon-tel {
-  margin-right: 10px;
-  fill: #757575;
-  /* background-color: violet; */
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-email:hover .icon-email,
-.link-tel:hover .icon-tel {
-  fill: currentColor;
-}
-
 /* ------------------------------                               ГЕОМЕТРИЯ */
 .header-flex {
   display: flex;
@@ -460,6 +446,12 @@ p {
   margin: 0px;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -485,6 +477,12 @@ p {
   align-items: center;
   margin-right: 0;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .header-cont {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -559,6 +557,89 @@ p {
 
 .link-nav.current {
   color: #2196f3;
+}
+
+@media screen and (min-width: 320px) {
+  .button-menu {
+    display: block;
+    margin-left: 284px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+/*-----------------------------------HEADER----------------------*/
+.icon-link.email {
+  color: #2196f3;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-link.email {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-link.email {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-link.email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+}
+
+.icon-link.tel {
+  color: #2196f3;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-link.tel {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-link.tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.link-email,
+.link-tel {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.link-email .icon-email,
+.link-tel .icon-tel {
+  fill: #757575;
+  /* background-color: violet; */
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-email:hover .icon-email,
+.link-tel:hover .icon-tel {
+  fill: currentColor;
 }
 
 .banner {
@@ -1300,10 +1381,6 @@ p {
     font-size: 26px;
     line-height: 31px;
   }
-}
-
-.icon-link {
-  color: #2196f3;
 }
 
 .header-logo {

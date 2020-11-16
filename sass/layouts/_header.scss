@@ -40,28 +40,6 @@
   background-color: $accent-text-color;
 }
 
-.link-email,
-.link-tel {
-  display: inline-flex;
-  justify-content: center;
-}
-
-.link-email .icon-email,
-.link-tel .icon-tel {
-  margin-right: 10px;
-
-  fill: $secondary-text-color;
-  /* background-color: violet; */
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-email:hover .icon-email,
-.link-tel:hover .icon-tel {
-  fill: currentColor;
-}
-
 /* ------------------------------                               ГЕОМЕТРИЯ */
 
 .header-flex {
@@ -86,6 +64,10 @@
   display: flex;
   align-items: center;
 
+  @include mobile-end {
+     display: none;
+   }
+  
   @include tablet {
     margin-left: 88px;
   }
@@ -108,6 +90,12 @@
   margin-right: 0;
   margin-left: auto;
 
+ 
+  @include mobile-end {
+    display: none;
+  }
+ 
+ 
   @include tablet {
     display: block;
   }
@@ -116,6 +104,7 @@
     display: flex;
   }
 }
+
 .header-cont .item:first-child {
   @include tablet {
     margin-right: 0px;
