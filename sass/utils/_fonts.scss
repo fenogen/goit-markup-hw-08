@@ -9,6 +9,28 @@ p {
 }
 
 /*-------------------------------HEADER--------------------------*/
+
+
+.menu-list {
+  @include mobile {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+  }
+}
+
+.cont-list {
+  @include mobile {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+  }
+}
+
 .list.navigator {
   font-weight: 500;
   font-size: 14px;
@@ -17,6 +39,7 @@ p {
 }
 
 .list.navigator.header-cont {
+
   @include tablet {
     font-size: 12px;
     line-height: 14px;
@@ -26,6 +49,7 @@ p {
     line-height: 16px;
   }
 }
+
 
 /*--------------------------------BANNER------------------------*/
 

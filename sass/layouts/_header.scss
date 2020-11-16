@@ -26,6 +26,7 @@
 }
 
 .link-nav.current::after {
+  @include tablet {
   content: "";
   display: inline-block;
   width: 100%;
@@ -38,6 +39,7 @@
   transform: translateY(32px);
 
   background-color: $accent-text-color;
+}
 }
 
 /* ------------------------------                               ГЕОМЕТРИЯ */

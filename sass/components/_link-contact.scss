@@ -8,10 +8,10 @@
        display: inline-block;
 
     @include mobile-end {
-        width: 14px;
-        height: 10px;
+        width: 16px;
+        height: 11px;
 
-        margin-right: 8px;
+        margin-right: 10px;
     }
 
 
@@ -34,6 +34,13 @@
 .icon-link.tel {
     color: $accent-text-color;
     display: inline-block;
+
+    @include mobile-end {
+        width: 10px;
+        height: 15px;
+
+        margin-right: 10px;
+    }
 
     @include tablet {
         width: 10px;
