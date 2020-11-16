@@ -10,6 +10,13 @@
     display: none;
 }
 
+.menu-icon {
+    background-image: url(../img/logo/menu-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .data-menu.is-open {
     @include mobile {
     display: block;
