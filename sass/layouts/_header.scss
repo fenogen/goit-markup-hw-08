@@ -43,13 +43,25 @@
 /* ------------------------------                               ГЕОМЕТРИЯ */
 
 .header-flex {
-  display: flex;
-  /*height: 80px;*/
   align-items: center;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .nav {
   display: flex;
+  
+  @include mobile {
+  justify-content: space-between;
+  padding-right: 8px;
+  }
+
+  @include tablet {
+   justify-content: flex-start;
+   padding-right: 0px;
+  }
 }
 
 /* .header-logo { 

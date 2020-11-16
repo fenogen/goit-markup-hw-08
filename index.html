@@ -16,7 +16,11 @@
         <div class="container header-flex">
         <nav class="nav">
          <a class="header-logo" href="./index.html"><span class="icon-link">Web</span>Studio</a>
-         <button data-menu-open class="button-menu"></button>
+         <button data-menu-button class="menu-open">
+                    <svg class="icon-open" width="" height="">
+                     <use href="./img/logo/sprite.svg#tel" ></use> 
+                    </svg>           
+         </button>
          <ul class="list navigator header-nav">
             <li class="item"> <a class="link-nav current" href="./index.html">Студия</a></li>
             <li class="item"> <a class="link-nav" href="./portfolio.html">Портфолио</a></li>
@@ -41,6 +45,34 @@
          </ul>
         </div>
     </header>
+     
+    <div class="container data-menu" data-menu>
+         <ul class="list menu-list">
+            <li class="item"> <a class="link-nav current" href="./index.html">Студия</a></li>
+            <li class="item"> <a class="link-nav" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"> <a class="link-nav" href="">Контакты</a></li>
+         </ul>
+        </nav>
+         <ul class="list navigator header-cont">
+            <li class="item">
+                <a class="link-email" href="mailto:info@devstudio.com">
+                <span class="icon-link email">
+                    <svg class="icon-email" width="" height="">
+                     <use href="./img/logo/sprite.svg#email"></use> 
+                    </svg> 
+                </span>info@devstudio.com</a></li>
+            <li class="item">
+                <a class="link-tel" href="tel:+380961111111">
+                <span class="icon-link tel">
+                    <svg class="icon-tel" width="10" height="16">
+                     <use href="./img/logo/sprite.svg#tel"></use> 
+                    </svg>
+                </span>+38 096 111 11 11</a></li>
+         </ul>
+
+
+
+            </div>
 
     <main>
      <section class="banner">
@@ -307,11 +339,12 @@
          </div>
         </div>
         
-         <div class="backdrop is-hidden" data-modal>
-          <div class="modal-menu">
-            <button data-menu-close>Закрыть</button>
-         </div>
+        
+         
+         
 
-    <script src="./js/modal.js"></script>
+         <script src="./js/modal.js"></script>
+         <script src="./js/modal-menu.js"></script>
+
 </body>
 </html>
