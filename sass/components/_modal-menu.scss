@@ -3,7 +3,19 @@
     display: none;
 }
 
-.menu-icon {
+.menu-button {
+
+    border: none;
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    width: 24px;
+        height: 16px;
+}
+
+
+/*.menu-button {
     
     border: none;
     padding: 0px;
@@ -19,11 +31,20 @@
     @include tablet {
      display: none;
  }
+}*/
+
+.data-menu.is-open .menu-cross {
+    border: none;
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+    background-image: url(../img/logo/menu-close.svg);
+    width: 24px;
+    height: 16px;
+    background-repeat: no-repeat;
 }
-
-.data-menu.is-open
-
-
 
 
 .data-menu.is-open {
