@@ -408,6 +408,7 @@ p {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
+    position: relative;
   }
 }
 
@@ -605,6 +606,7 @@ p {
 
 .menu-button {
   border: none;
+  background-color: transparent;
   padding: 0px;
   margin-top: auto;
   margin-bottom: auto;
@@ -612,38 +614,39 @@ p {
   height: 16px;
 }
 
-/*.menu-button {
-    
-    border: none;
-    padding: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 
-    background-image: url(../img/logo/menu-open.svg);
-    width: 24px;
-    height: 16px;
-    background-repeat: no-repeat;
+.menu-button .icon-cross {
+  display: none;
+}
 
-    @include tablet {
-     display: none;
- }
-}*/
-.data-menu.is-open .menu-cross {
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.data-menu.is-open .menu-button {
   border: none;
+  background-color: transparent;
   padding: 0px;
   margin-top: auto;
   margin-bottom: auto;
-  background-image: url(../img/logo/menu-close.svg);
-  width: 24px;
-  height: 16px;
-  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 320px) {
   .data-menu.is-open {
     display: block;
     height: 373px;
+    position: absolute;
+    /*будет сверху контента*/
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
   }

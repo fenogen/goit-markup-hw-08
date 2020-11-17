@@ -6,44 +6,41 @@
 .menu-button {
 
     border: none;
+    background-color: transparent;
+
     padding: 0px;
     margin-top: auto;
     margin-bottom: auto;
 
     width: 24px;
-        height: 16px;
+    height: 16px;
+        
+    @include tablet {
+     display: none;
+     }
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
 }
 
 
-/*.menu-button {
-    
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+
+.data-menu.is-open .menu-button {
     border: none;
+    background-color: transparent;
+
     padding: 0px;
     margin-top: auto;
     margin-bottom: auto;
-    
-
-    background-image: url(../img/logo/menu-open.svg);
-    width: 24px;
-    height: 16px;
-    background-repeat: no-repeat;
-
-    @include tablet {
-     display: none;
- }
-}*/
-
-.data-menu.is-open .menu-cross {
-    border: none;
-    padding: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-
-
-    background-image: url(../img/logo/menu-close.svg);
-    width: 24px;
-    height: 16px;
-    background-repeat: no-repeat;
 }
 
 
@@ -51,6 +48,9 @@
     @include mobile {
     display: block;
     height: 373px;
+
+    position: absolute; /*будет сверху контента*/
+    width: 100%;
 
     padding-top: 60px;
     padding-bottom: 60px;

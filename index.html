@@ -16,11 +16,12 @@
         <div class="container header-flex">
         <nav class="nav">
          <a class="header-logo" href="./index.html"><span class="icon-link">Web</span>Studio</a>
-         <button data-menu-button class="menu-button">
-             <svg class="" width="" height="">
+         <button data-menu-button class="menu-button is-open" aria-expanded="false" aria-controls="js-connect" > 
+             <!--aria-expanded="false" aria-controls="js-connect"    -    для доступности, связка свойств, необязательны-->
+             <svg width="" height="" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./img/logo/sprite.svg#menu-open"></use>
-                    <use class="icon-coss" href="./img/logo/sprite.svg#menu-close"></use>
-                    </svg>
+                    <use class="icon-cross" href="./img/logo/sprite.svg#menu-close"></use>
+                 </svg>
          </button>
          <ul class="list navigator header-nav">
             <li class="item"> <a class="link-nav current" href="./index.html">Студия</a></li>
@@ -47,7 +48,7 @@
         </div>
     </header>
      
-    <div class="container data-menu" data-menu>
+    <div class="container data-menu is-open" id="js-connect" data-menu>
          <ul class="list menu-list">
             <li class="item"> <a class="link-nav current" href="./index.html">Студия</a></li>
             <li class="item"> <a class="link-nav" href="./portfolio.html">Портфолио</a></li>
