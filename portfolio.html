@@ -12,35 +12,67 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-   <header class="header">
-            <div class="container header-flex decor">
-                <nav class="nav">
-                    <a class="header-logo" href="./index.html"><span class="icon-link">Web</span>Studio</a>
-                    <button data-menu-open class="button-menu"></button>
-                    <ul class="list navigator header-nav">
-                        <li class="item"> <a class="link-nav" href="./index.html">Студия</a></li>
-                        <li class="item"> <a class="link-nav current" href="./portfolio.html">Портфолио</a></li>
-                        <li class="item"> <a class="link-nav" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="list navigator header-cont">
-                    <li class="item">
-                        <a class="link-email" href="mailto:info@devstudio.com">
-                            <span class="icon-link email">
-                                <svg class="icon-email" width="" height="">
-                                    <use href="./img/logo/sprite.svg#email"></use>
-                                </svg>
-                            </span>info@devstudio.com</a></li>
-                    <li class="item">
-                        <a class="link-tel" href="tel:+380961111111">
-                            <span class="icon-link tel">
-                                <svg class="icon-tel" width="" height="">
-                                    <use href="./img/logo/sprite.svg#tel"></use>
-                                </svg>
-                            </span>+38 096 111 11 11</a></li>
-                </ul>
-            </div>
+
+    <header class="header">
+        <div class="container header-flex">
+        <nav class="nav">
+         <a class="header-logo" href="./index.html"><span class="icon-link">Web</span>Studio</a>
+         <button data-menu-button class="menu-button" aria-expanded="false" aria-controls="js-connect" > 
+             <!--aria-expanded="false" aria-controls="js-connect"    -    для доступности, связка свойств, необязательны-->
+             <svg width="" height="" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./img/logo/sprite.svg#menu-open"></use>
+                    <use class="icon-cross" href="./img/logo/sprite.svg#menu-close"></use>
+                 </svg>
+         </button>
+         <ul class="list navigator header-nav">
+            <li class="item"> <a class="link-nav" href="./index.html">Студия</a></li>
+            <li class="item"> <a class="link-nav current" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"> <a class="link-nav" href="">Контакты</a></li>
+         </ul>
+        </nav>
+         <ul class="list navigator header-cont">
+            <li class="item">
+                <a class="link-email" href="mailto:info@devstudio.com">
+                <span class="icon-link email">
+                    <svg class="icon-email" width="" height="">
+                     <use href="./img/logo/sprite.svg#email"></use> 
+                    </svg> 
+                </span>info@devstudio.com</a></li>
+            <li class="item">
+                <a class="link-tel" href="tel:+380961111111">
+                <span class="icon-link tel">
+                    <svg class="icon-tel" width="10" height="16">
+                     <use href="./img/logo/sprite.svg#tel"></use> 
+                    </svg>
+                </span>+38 096 111 11 11</a></li>
+         </ul>
+        </div>
     </header>
+     
+        <div class="container data-menu" id="js-connect" data-menu>
+         <ul class="list menu-list">
+            <li class="item"> <a class="link-nav" href="./index.html">Студия</a></li>
+            <li class="item"> <a class="link-nav current" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"> <a class="link-nav" href="">Контакты</a></li>
+         </ul>
+          </nav>
+           <ul class="list cont-list">
+            <li class="item">
+                <a class="link-email" href="mailto:info@devstudio.com">
+                <span class="icon-link email">
+                    <svg class="icon-email" width="" height="">
+                     <use href="./img/logo/sprite.svg#email"></use> 
+                    </svg> 
+                </span>info@devstudio.com</a></li>
+            <li class="item">
+                <a class="link-tel" href="tel:+380961111111">
+                <span class="icon-link tel">
+                    <svg class="icon-tel" width="10" height="16">
+                     <use href="./img/logo/sprite.svg#tel"></use> 
+                    </svg>
+                </span>+38 096 111 11 11</a></li>
+         </ul>
+            </div>
 
     <main>
       <section class="section portfolio">
@@ -188,50 +220,48 @@
      </section>
      </main>
 
-  <footer class="footer"> 
+    <footer class="footer">
     <div class="container footer-flexbox">
-        <div class="footer-box">
-            <a href="./index.html" class="footer-logo"><span class="icon-link">Web</span>Studio</a>
-            <address class="address footer-flex">
-                <p class="address-text">г. Киев, пр-т Леси Украинки, 26 </p>
-                <a class="address-email" href="mailto:info@example.com">info@example.com</a>
-                <a class="address-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-            </address>
-        </div>
-        <div class="footer-box">
-            <h2 class="social-connect">Присоединяйтесь</h2>
-            <ul class="list social-list black">
-                <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg
-                            class="social-icon">
-                            <use href="./img/logo/sprite.svg#instagram"></use>
-                        </svg></a>
-                </li>
-                <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg
-                            class="social-icon">
-                            <use href="./img/logo/sprite.svg#twitter"></use>
-                        </svg></a>
-                </li>
-                <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg
-                            class="social-icon">
-                            <use href="./img/logo/sprite.svg#facebook"></use>
-                        </svg></a>
-                </li>
-                <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg
-                            class="social-icon">
-                            <use href="./img/logo/sprite.svg#linkedin"></use>
-                        </svg></a>
-                </li>
-            </ul>
-        </div>
+     <div class="footer-box">
+         <a href="./index.html" class="footer-logo"><span class="icon-link">Web</span>Studio</a>
+        <address class="address footer-flex">
+        <p class="address-text">г. Киев, пр-т Леси Украинки, 26 </p>
+        <a class="address-email" href="mailto:info@example.com">info@example.com</a>
+        <a class="address-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </address>
+     </div>
+    <div class="footer-box">
+     <h2 class="social-connect">Присоединяйтесь</h2>
+     <ul class="list social-list black">
+        <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg class="social-icon">
+                                    <use href="./img/logo/sprite.svg#instagram"></use>
+                                </svg></a>
+        </li>
+        <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg class="social-icon">
+                                    <use href="./img/logo/sprite.svg#twitter"></use>
+                                </svg></a>
+        </li>
+        <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg class="social-icon">
+                                    <use href="./img/logo/sprite.svg#facebook"></use>
+                                </svg></a>
+        </li>
+        <li class="social-item black"> <a class="social-link black" aria-label="Instagram" href=""><svg class="social-icon">
+                                    <use href="./img/logo/sprite.svg#linkedin"></use>
+                                </svg></a>
+        </li>
+         </ul>
+     </div>
     </div>
-    </footer>
+  </footer>
 
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal-menu">
-            <button data-menu-close>Закрыть</button>
+         <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+            <button data-modal-close>Закрыть</button>
          </div>
         </div>
+        
+         <script src="./js/modal.js"></script>
+         <script src="./js/modal-menu.js"></script>
 
-     <script src="./js/modal.js"></script>
-</body>
+  </body>
 </html>
