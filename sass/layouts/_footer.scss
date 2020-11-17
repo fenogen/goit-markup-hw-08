@@ -80,6 +80,14 @@
 }
 
 .footer-box + .footer-box {
+  
+  /*@media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }*/
+  
   @include mobile {
     margin-left: 0px;
     margin-top: 60px;
