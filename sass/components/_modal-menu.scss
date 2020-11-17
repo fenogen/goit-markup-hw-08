@@ -1,20 +1,29 @@
 
-.menu-icon {
-    @include tablet {
-    display: none;
- }
-}
-
-
 .data-menu {
     display: none;
 }
 
 .menu-icon {
+    
+    border: none;
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+
     background-image: url(../img/logo/menu-open.svg);
+    width: 24px;
+    height: 16px;
     background-repeat: no-repeat;
-    background-position: center;
+
+    @include tablet {
+     display: none;
+ }
 }
+
+.data-menu.is-open
+
+
 
 
 .data-menu.is-open {
