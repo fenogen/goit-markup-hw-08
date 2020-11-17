@@ -1342,12 +1342,10 @@ p {
   }*/
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .footer-box + .footer-box {
     margin-left: 0px;
     margin-top: 60px;
-    padding-left: 122px;
-    padding-right: 122px;
   }
 }
 
@@ -1370,6 +1368,13 @@ p {
   margin-left: 0px;
   margin-top: 20px;
   padding: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .social-list.black {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
 }
 
 .footer-logo {
