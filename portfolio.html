@@ -49,7 +49,7 @@
         </div>
     </header>
      
-        <div class="container data-menu" id="js-connect" data-menu>
+    <div class="container data-menu" id="js-connect" data-menu>
          <ul class="list menu-list">
             <li class="item"> <a class="link-nav" href="./index.html">Студия</a></li>
             <li class="item"> <a class="link-nav current" href="./portfolio.html">Портфолио</a></li>
@@ -72,11 +72,11 @@
                     </svg>
                 </span>+38 096 111 11 11</a></li>
          </ul>
-            </div>
+    </div>
 
-    <main>
-      <section class="section portfolio">
-        <div class="container">
+  <main>
+    <section class="section portfolio">
+      <div class="container">
             <ul class="list button-flex">
              <li class="item">
                 <button class="item-button">Все</button></li>
@@ -89,15 +89,26 @@
              <li class="item">
                 <button class="item-button">Маркетинг</button></li>
             </ul>
-         <ul class="list project-flex">
+           <ul class="list project-flex">
             <li class="item">
-            <a class="" href="">
+             <a class="" href="">
               <div class="project-photo">
-                <img class="photo" src="./img/portfolio/project-1.jpg" 
-                alt="Project-1" width="370"> 
+                  <picture>
+                    <source
+                        srcset="./img/desktop-project/img-1-370-@2x.jpg 1x, ./img/desktop-project/img-1-370-@2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                    <source 
+                        srcset="./img/tablet-project/img-1-354-@2x.jpg 1x, ./img/tablet-project/img-1-354-@2x.jpg 2x"
+                        media="(min-width: 768px)"/>                   
+                    <source 
+                        srcset="./img/mobile-project/img-1-450-@2x.jpg 1x, ./img/mobile-project/img-1-450-@2x.jpg 2x"
+                        media="(min-width: 480px)"/>
+                    <img class="photo" 
+                    src="./img/portfolio/project-1.jpg" 
+                    alt="Project-1" width="370"> 
                 <p class="project-article">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                 шпионажа и атак на защищённые сервера конкурентов</p>
-              </div>
+             </div>
               <div class="project-title">   
                 <h3 class="project-name">Технокряк</h3>
                 <p class="project-desc">Веб-сайт</p>
