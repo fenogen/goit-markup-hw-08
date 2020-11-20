@@ -24,14 +24,34 @@
     display: none;
 }
 
+
+
 .menu-button.is-open .icon-cross {
     display: block;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-button.is-open .icon-cross:hover,
+.menu-button.is-open .icon-cross:focus {
+    fill: $accent-text-color;
+}
 
 .menu-button.is-open .icon-menu {
     display: none;
 }
+
+.menu-button .icon-menu {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button .icon-menu:hover,
+.menu-button .icon-menu:focus {
+    fill: $accent-text-color;
+}
+
 
 
 .data-menu.is-open .menu-button {
@@ -59,6 +79,8 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
+
+    z-index: 99;
     }
     
     @include tablet {

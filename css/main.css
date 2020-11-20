@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -439,8 +443,14 @@ p {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    transform: translateY(32px);
+    transform: translateY(35px);
     background-color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-nav.current::after {
+    transform: translateY(34px);
   }
 }
 
@@ -621,10 +631,27 @@ p {
 
 .menu-button.is-open .icon-cross {
   display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button.is-open .icon-cross:hover,
+.menu-button.is-open .icon-cross:focus {
+  fill: #2196f3;
 }
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button .icon-menu {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button .icon-menu:hover,
+.menu-button .icon-menu:focus {
+  fill: #2196f3;
 }
 
 .data-menu.is-open .menu-button {
@@ -647,6 +674,7 @@ p {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    z-index: 99;
   }
 }
 
@@ -780,16 +808,22 @@ p {
 }
 
 .banner {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media screen and (min-width: 480px) {
   .banner {
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-img-480@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-img-768@1x.jpg);
   }
 }
 
@@ -797,6 +831,27 @@ p {
   .banner {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-img-1600@1x.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-img-480@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-img-768@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-img-1600@2x.jpg);
+    background-size: cover;
   }
 }
 

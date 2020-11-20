@@ -37,10 +37,14 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  transform: translateY(32px);
+  transform: translateY(35px);
 
   background-color: $accent-text-color;
-}
+  }
+  @include desktop {
+  transform: translateY(34px);
+
+ }
 }
 
 /* ------------------------------                               ГЕОМЕТРИЯ */
