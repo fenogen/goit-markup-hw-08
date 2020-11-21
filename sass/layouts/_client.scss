@@ -20,13 +20,11 @@
 }
 
 .client-item {
-
   margin-left: 30px;
 
-    @media screen and (max-width: 480px) {
-      margin-bottom: 30px;
-
-    }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
 
   @include mobile-end {
     margin-left: 30px;

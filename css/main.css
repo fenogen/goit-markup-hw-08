@@ -49,6 +49,11 @@ img {
   }
 }
 
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 @media screen and (min-width: 480px) {
   .section {
     /*автоматом и tablet*/
@@ -1039,15 +1044,10 @@ p {
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-@media screen and (min-width: 480px) {
-  .team-flex {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 0px;
-  }
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1070,14 +1070,9 @@ p {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-@media screen and (min-width: 480px) {
-  .team-photo {
-    display: inline-block;
-    padding-bottom: 24px;
-    flex-basis: 100%;
-  }
+  display: inline-block;
+  padding-bottom: 24px;
+  flex-basis: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1096,10 +1091,8 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .team-photo:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.team-photo:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team-photo:nth-child(n + 3) {
@@ -1387,11 +1380,8 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer-box {
-    /* + tablet*/
-    text-align: center;
-  }
+.footer-box {
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1471,14 +1461,9 @@ p {
   display: flex;
   margin: 0px;
   padding: 0px;
-}
-
-@media screen and (min-width: 480px) {
-  .button-flex {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-bottom: 40px;
-  }
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {

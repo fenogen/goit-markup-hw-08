@@ -3,11 +3,10 @@
   margin: 0px;
   padding: 0px;
 
-  @include mobile {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-bottom: 40px;
-  }
+  // @include mobile {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 
   @include tablet {
     justify-content: center;

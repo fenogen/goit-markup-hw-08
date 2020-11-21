@@ -70,24 +70,21 @@
 }
 
 .footer-box {
-  @include mobile {
-    /* + tablet*/
-    text-align: center;
-  }
+  text-align: center;
+
   @include desktop {
     text-align: left;
   }
 }
 
 .footer-box + .footer-box {
-  
   /*@media screen and (max-width: 479px) {
     margin-bottom: 30px;
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
   }*/
-  
+
   @include mobile-end {
     margin-left: 0px;
     margin-top: 60px;
@@ -112,11 +109,10 @@
 }
 
 .social-list.black {
-    @include mobile-end {
-
+  @include mobile-end {
     padding-left: 122px;
     padding-right: 122px;
-    }
+  }
 }
 
 .footer-logo {

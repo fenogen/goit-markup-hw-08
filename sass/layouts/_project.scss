@@ -4,9 +4,6 @@
   padding: 0px;
   margin-left: -30px;
 
-  @include mobile {
-  }
-
   @include tablet {
     display: flex;
     flex-wrap: wrap;

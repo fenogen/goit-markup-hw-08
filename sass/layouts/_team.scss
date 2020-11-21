@@ -3,12 +3,11 @@
   margin-top: 0px;
   margin-bottom: 0px;
 
-  @include mobile {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 0px;
-  }
+  // @include mobile {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0px;
 
   @include tablet {
     display: flex;
@@ -27,12 +26,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @include mobile {
-    display: inline-block;
-    padding-bottom: 24px;
-    // margin-left: 0px;
-    flex-basis: 100%;
-  }
+  // @include mobile {
+  display: inline-block;
+  padding-bottom: 24px;
+  // margin-left: 0px;
+  flex-basis: 100%;
 
   @include tablet {
     margin-left: 30px;
@@ -48,9 +46,8 @@
 }
 
 .team-photo:not(:last-child) {
-  @include mobile {
-    margin-bottom: 30px;
-  }
+  // @include mobile {
+  margin-bottom: 30px;
 }
 
 .team-photo:nth-child(n + 3) {

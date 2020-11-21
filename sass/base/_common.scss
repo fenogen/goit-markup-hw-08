@@ -32,12 +32,10 @@ img {
   @media screen and (min-width: 480px) {
     width: 480px;
     // background-color: pink;
-
   }
   @include tablet {
     width: 768px;
     // background-color: skyblue;
-
   }
   @include desktop {
     width: 1200px;
@@ -46,6 +44,9 @@ img {
 }
 
 .section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   @include mobile {
     /*автоматом и tablet*/
     padding-top: 60px;
