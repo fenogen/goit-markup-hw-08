@@ -20,16 +20,14 @@
 }
 
 .button-flex .item:nth-child(-n + 3) {
-  @include mobile {
-    margin-right: 8px;
-    margin-bottom: 15px;
-  }
+  // @include mobile {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .button-flex .item:nth-child(4) {
-  @include mobile {
-    margin-right: 8px;
-  }
+  // @include mobile {
+  margin-right: 8px;
 }
 
 .button-flex .item:nth-child(n + 1) {

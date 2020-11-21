@@ -1480,17 +1480,13 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .button-flex .item:nth-child(-n + 3) {
-    margin-right: 8px;
-    margin-bottom: 15px;
-  }
+.button-flex .item:nth-child(-n + 3) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .button-flex .item:nth-child(4) {
-    margin-right: 8px;
-  }
+.button-flex .item:nth-child(4) {
+  margin-right: 8px;
 }
 
 .button-flex .item:nth-child(n + 1) {
