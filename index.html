@@ -394,6 +394,34 @@
          <div class="backdrop is-hidden" data-modal>
          <div class="modal">
             <button data-modal-close>Закрыть</button>
+            <form class="form">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <ul class="list form-list">
+                    <li class="item form-item">
+                         <label class="form-label" for="username">Имя</label>
+                         <input id="username" name="name" type="text" />
+                    </li>
+                    <li>
+                         <label class="form-label" for="usertel">Телефон</label>
+                         <input id="usertel" name="tel" type="tel" />
+                    <li class="item form-item">
+                    <li>
+                         <label class="form-label" for="usermail">Почта</label>
+                         <input id="usermail" name="email" type="email" />
+                    </li>
+                    <li class="item form-item">
+                         <label class="form-label" for="comment">Комментарий</label>
+                         <textarea id="comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
+                    </li>        
+               </ul>
+               <div role="group">
+                <input type="checkbox" name="agreement" value="backend" id="agree"/>
+                <label class="form-label text" for="agree">Соглашаюсь с рассылкой и принимаю <span class="icon-link">Условия договора</span></label>
+               </div>
+
+                <button class="banner-button send" type="submit">Отправить</button>
+
+                </form>
          </div>
         </div>
         
