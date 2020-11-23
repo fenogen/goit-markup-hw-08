@@ -787,6 +787,13 @@ p {
   margin-right: 0px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-cross:hover,
+.button-cross:focus {
+  fill: #2196f3;
 }
 
 .form {
@@ -796,6 +803,10 @@ p {
 .form-list {
   margin: 0px;
   padding: 0px;
+}
+
+.form-item {
+  position: relative;
 }
 
 li > input {
@@ -856,7 +867,6 @@ textarea {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 4px;
-  position: relative;
 }
 
 .form-icon {
@@ -864,6 +874,9 @@ textarea {
   width: 16px;
   height: 15px;
   position: absolute;
+  transform: translateY(-50%);
+  top: 48px;
+  left: 15px;
   background-color: springgreen;
 }
 
