@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
@@ -767,7 +767,7 @@ p {
   right: 50%;
   width: 528px;
   height: 581px;
-  padding: 40px;
+  padding: 8px 8px 40px 40px;
   transform: translate(-50%) scale(1);
   transition-property: transform;
   transition-duration: 250ms;
@@ -775,6 +775,22 @@ p {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.button-cross {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.form {
+  margin-right: 32px;
 }
 
 .form-list {
@@ -803,8 +819,9 @@ input::placeholder {
 textarea {
   padding: 0px;
   margin: 0px;
+  padding: 12px 16px;
   width: 100%;
-  height: 120px;
+  height: 116px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -824,6 +841,7 @@ textarea {
   text-align: center;
   padding: 0px;
   margin: 0px;
+  margin-top: 2px;
   margin-bottom: 2px;
 }
 
@@ -838,23 +856,70 @@ textarea {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 4px;
+  position: relative;
+}
+
+.form-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  background-color: springgreen;
 }
 
 .form-label.text {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  padding-left: 13px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  /*Прячим стандартный чекбокс*/
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  vertical-align: text-top;
+  margin-right: 7px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #212121;
+}
+
+.checkbox:checked + .icon-check {
+  background-color: #2196f3;
+  border-radius: 2px;
+  border-width: 0px;
+  border-color: #2196f3;
+  background-image: url(../img/icon/check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .banner-button.send {
+  display: block;
   box-sizing: border-box;
   border-width: 0px;
   border-radius: 4px;
   width: 200px;
   height: 50px;
   margin: 0px;
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*-----------------------------------HEADER----------------------*/
