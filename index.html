@@ -388,6 +388,16 @@
         </li>
          </ul>
      </div>
+     <div class="subsribe-box">
+     <form class="subsribe-form"> 
+         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+         <label>E-mail
+             <input type="email"/>
+         </label>
+         <button>
+
+         </button>
+     </form>
     </div>
   </footer>
 
@@ -398,27 +408,39 @@
                 <use class="icon-cross" href="./img/logo/sprite.svg#menu-close"></use>
             </svg>
             </button>
-            <form class="form">
+            <form class="form" autocomplete="off">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <ul class="list form-list">
                     <li class="item form-item">
-                         <span class="form-icon"></span>
+                         <span class="form-icon">
+                            <svg class="icon" width="" height="" aria-label="Переключатель мобильного меню">
+                              <use href="./img/logo/sprite.svg#person"></use>
+                            </svg>
+                         </span>
                          <label class="form-label" for="username">Имя</label>
-                         <input id="username" name="name" type="text" />
+                         <input class="form-input" id="username" name="name" type="text" placeholder=""/>
                     </li>
                     <li class="item form-item">
-                        <span class="form-icon"></span>
+                        <span class="form-icon">
+                            <svg class="" width="" height="" aria-label="Переключатель мобильного меню">
+                                <use href="./img/logo/sprite.svg#phone"></use>
+                            </svg>
+                        </span>
                          <label class="form-label" for="usertel">Телефон</label>
-                         <input id="usertel" name="tel" type="tel" />
+                         <input class="form-input" id="usertel" name="tel" type="tel" placeholder=""/>
                     <li class="item form-item">
                     <li class="item form-item">
-                        <span class="form-icon"></span>
+                        <span class="form-icon">
+                            <svg class="" width="" height="" aria-label="Переключатель мобильного меню">
+                                <use href="./img/logo/sprite.svg#letter"></use>
+                            </svg>
+                        </span>
                          <label class="form-label" for="usermail">Почта</label>
-                         <input id="usermail" name="email" type="email" />
+                         <input  class="form-input" id="usermail" name="email" type="email" placeholder=""/>
                     </li>
                     <li class="item form-item">
-                         <label class="form-label" for="comment">Комментарий</label>
-                         <textarea id="comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
+                         <label class="form-label" for="comment" placeholder=" ">Комментарий</label>
+                         <textarea class="form-textarea" id="comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
                     </li>        
                </ul>              
                 <label class="form-label text" for="agree">

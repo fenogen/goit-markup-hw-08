@@ -809,13 +809,11 @@ p {
   position: relative;
 }
 
-li > input {
+.form-input {
   width: 100%;
-}
-
-input {
   height: 40px;
   padding: 0px;
+  padding-left: 42px;
   margin: 0px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -823,11 +821,16 @@ input {
   font-size: 14px;
 }
 
-input::placeholder {
-  border-color: lawngreen;
+.form-item:focus-within {
+  fill: #2196f3;
 }
 
-textarea {
+.form-input:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+.form-textarea {
   padding: 0px;
   margin: 0px;
   padding: 12px 16px;
@@ -838,6 +841,11 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   font-size: 14px;
+}
+
+.form-textarea:focus {
+  border: 1px solid #2196f3;
+  outline: none;
 }
 
 .form-title {
@@ -877,7 +885,8 @@ textarea {
   transform: translateY(-50%);
   top: 48px;
   left: 15px;
-  background-color: springgreen;
+  padding: 0px;
+  margin: 0px;
 }
 
 .form-label.text {
@@ -1616,6 +1625,22 @@ textarea {
 .address-email,
 .address-tel {
   padding-top: 9px;
+}
+
+/*-----------------Подпишись на нас------------*/
+.subscribe-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  /* background-color: rebeccapurple; */
+}
+
+.subscribe-box {
+  background-color: yellowgreen;
 }
 
 .button-flex {
