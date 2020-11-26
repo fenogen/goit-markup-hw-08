@@ -33,8 +33,7 @@
   top: 141px;
   left: 50%;
   right: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
 
   padding: 8px 8px 40px 40px;
 
@@ -49,6 +48,16 @@
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-cross {
@@ -134,7 +143,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -145,6 +154,10 @@
   margin: 0px;
   margin-top: 2px;
   margin-bottom: 2px;
+
+  @include desktop {
+    line-height: 23px;
+  }
 }
 
 .form-label {
@@ -178,13 +191,18 @@
 }
 
 .form-label.text {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
-  // outline: 1px solid red;
-  padding-left: 13px;
+  padding-left: 0px;
   margin-top: 20px;
   margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 13px;
+  }
 }
 
 .checkbox {

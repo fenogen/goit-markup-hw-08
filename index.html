@@ -41,7 +41,7 @@
             <li class="item">
                 <a class="link link-tel" href="tel:+380961111111">
                 <span class="icon-link tel">
-                    <svg class="icon-tel" width="10" height="16">
+                    <svg class="icon-tel" width="" height="">
                      <use href="./img/logo/sprite.svg#tel"></use> 
                     </svg>
                 </span>+38 096 111 11 11</a></li>
@@ -66,7 +66,7 @@
             <li class="item">
                 <a class="link link-tel" href="tel:+380961111111">
                 <span class="icon-link tel">
-                    <svg class="icon-tel" width="10" height="16">
+                    <svg class="icon-tel" width="" height="">
                      <use href="./img/logo/sprite.svg#tel"></use> 
                     </svg>
                 </span>+38 096 111 11 11</a></li>
@@ -367,7 +367,7 @@
         <a class="link address-tel" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
      </div>
-    <div class="footer-box">
+     <div class="footer-box">
      <h2 class="social-connect">Присоединяйтесь</h2>
      <ul class="list social-list black">
         <li class="social-item black"> <a class="link social-link black" aria-label="Instagram" href=""><svg class="social-icon">
@@ -388,17 +388,19 @@
         </li>
          </ul>
      </div>
-     <div class="subsribe-box">
+    
      <form class="subsribe-form"> 
          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-         <label>E-mail
-             <input type="email"/>
-         </label>
-         <button>
-
-         </button>
+         <div class="subsribe-box">
+           <label class="subscribe-label" for="subscribe-input">E-mail</label>
+           <input class="subscribe-input" id="subscribe-input" type="email"/>
+                    <button class="banner-button button-send" type="button">Подписаться
+                        <svg width="" height="" aria-label="Переключатель мобильного меню" class="icon-send">
+                            <use href="./img/logo/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+        </div>
      </form>
-    </div>
   </footer>
 
          <div class="backdrop is-hidden" data-modal>

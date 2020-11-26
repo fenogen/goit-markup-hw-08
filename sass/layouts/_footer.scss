@@ -52,6 +52,7 @@
 }
 
 .footer-flexbox {
+  // justify-content: space-between;
   @include mobile {
     display: block;
   }
@@ -60,12 +61,14 @@
     display: flex;
     padding-left: 61px;
     padding-right: 74px;
+    flex-wrap: wrap;
   }
 
   @include desktop {
     display: flex;
     padding-left: 15px;
-    padding-right: 0px;
+    padding-right: 15px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -148,9 +151,104 @@
   color: #ffffff;
 
   margin: 0px;
-  /* background-color: rebeccapurple; */
+  margin-top: 12px;
+  margin-bottom: 20px;
+  // background-color: rebeccapurple;
 }
 
-.subscribe-box {
-  background-color: yellowgreen;
+.subsribe-form {
+  // background-color: yellowgreen;
+  margin-right: 0px;
+  margin-left: auto;
+  padding-top: 24px;
+  text-align: center;
+
+  @include mobile {
+    padding-top: 48px;
+    text-align: center;
+  }
+
+  @include tablet {
+    padding-top: 48px;
+    text-align: center;
+  }
+
+  @include desktop {
+    padding-top: 0px;
+    text-align: left;
+  }
+}
+
+.subsribe-box {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+.subscribe-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  transform: translateY(-50%);
+  @include tablet {
+    left: 107px;
+  }
+
+  @include desktop {
+    left: 16px;
+  }
+}
+
+.subscribe-input {
+  height: 50px;
+  width: 100%;
+
+  outline: none;
+  padding: 0px;
+  padding-left: 70px;
+  padding-bottom: 2px;
+  margin: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include desktop {
+    width: 358px;
+  }
+}
+
+.subscribe-input:focus {
+  border: 1px solid #2196f3;
+  color: #ffffff;
+}
+
+.banner-button.button-send {
+  margin: 0px;
+  margin-top: 20px;
+
+  @include desktop {
+    margin-left: 12px;
+    margin-top: 0px;
+  }
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
 }

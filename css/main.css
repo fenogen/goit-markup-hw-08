@@ -765,8 +765,7 @@ p {
   top: 141px;
   left: 50%;
   right: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   padding: 8px 8px 40px 40px;
   transform: translate(-50%) scale(1);
   transition-property: transform;
@@ -775,6 +774,20 @@ p {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-cross {
@@ -853,7 +866,7 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -862,6 +875,12 @@ p {
   margin: 0px;
   margin-top: 2px;
   margin-bottom: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 23px;
+  }
 }
 
 .form-label {
@@ -890,12 +909,20 @@ p {
 }
 
 .form-label.text {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
-  padding-left: 13px;
+  padding-left: 0px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-label.text {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 13px;
+  }
 }
 
 .checkbox {
@@ -963,6 +990,7 @@ p {
     width: 14px;
     height: 10px;
     margin-right: 8px;
+    margin-top: 1px;
   }
 }
 
@@ -1000,6 +1028,12 @@ p {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-tel {
+    padding-top: 3px;
   }
 }
 
@@ -1539,6 +1573,7 @@ p {
     display: flex;
     padding-left: 61px;
     padding-right: 74px;
+    flex-wrap: wrap;
   }
 }
 
@@ -1546,7 +1581,8 @@ p {
   .footer-flexbox {
     display: flex;
     padding-left: 15px;
-    padding-right: 0px;
+    padding-right: 15px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1636,11 +1672,117 @@ p {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0px;
-  /* background-color: rebeccapurple; */
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 
-.subscribe-box {
-  background-color: yellowgreen;
+.subsribe-form {
+  margin-right: 0px;
+  margin-left: auto;
+  padding-top: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .subsribe-form {
+    padding-top: 48px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subsribe-form {
+    padding-top: 48px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subsribe-form {
+    padding-top: 0px;
+    text-align: left;
+  }
+}
+
+.subsribe-box {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+.subscribe-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-label {
+    left: 107px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-label {
+    left: 16px;
+  }
+}
+
+.subscribe-input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 0px;
+  padding-left: 70px;
+  padding-bottom: 2px;
+  margin: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: #2f303a;
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
+}
+
+.subscribe-input:focus {
+  border: 1px solid #2196f3;
+  color: #ffffff;
+}
+
+.banner-button.button-send {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-button.button-send {
+    margin-left: 12px;
+    margin-top: 0px;
+  }
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 .button-flex {
